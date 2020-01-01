@@ -27,4 +27,21 @@ li a {
   .btn-contact:hover {
     background-color: #20f9f2; }
 
+.initials_signature {
+  width: 600px;
+  margin: 0 auto; }
+
+.skills {
+  background: -webkit-gradient(linear, left top, right top, from(#fcfcfc), color-stop(51%, #fcfcfc), color-stop(51%, #e9e9e9));
+  background: linear-gradient(to right, #fcfcfc 0%, #fcfcfc 51%, #e9e9e9 51%);
+  padding: 100px 100px; }
+
+.progress {
+  height: 0.3rem; }
+  .progress .progress-bar {
+    background-color: #10c9c3; }
+
+.professional_skills {
+  width: 463px; }
+
 /*# sourceMappingURL=style.css.map */
