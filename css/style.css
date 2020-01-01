@@ -1,3 +1,6 @@
+img {
+  width: 100%; }
+
 .header {
   background-color: #e9e9e9; }
 
@@ -46,5 +49,20 @@ li a {
 
 .work_statistics {
   background-color: #10c9c3; }
+
+.hover_block:hover {
+  background-color: #252525;
+  background-image: url(../img/look_hover.png);
+  background-repeat: no-repeat;
+  background-position: center 50%; }
+  .hover_block:hover img {
+    opacity: 0; }
+
+.block_button {
+  background-color: #f5f5f5; }
+  .block_button .load_work {
+    margin: 0 auto;
+    display: block;
+    color: #b0b0b0; }
 
 /*# sourceMappingURL=style.css.map */
