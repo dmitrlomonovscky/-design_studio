@@ -1,9 +1,9 @@
 $color-turquoise: #10c9c3
 
-
-
-img 
+img[src$=".jpg"]
 	width: 100%
+p 
+	color: #b0b0b0
 .header
 	background-color: #e9e9e9
 .navbar-collapse
@@ -19,6 +19,14 @@ li a
 	padding-bottom: 122px
 	padding-top: 122px
 	padding-right: 39px
+	@media (max-width: 578.98px)
+		align-items: center
+		display: flex
+		flex-direction: column
+		padding-right: 0
+		h1,p
+			text-align: center
+
 .btn-contact
 	padding: 8px 16px
 	background-color: $color-turquoise
@@ -26,32 +34,58 @@ li a
 	&:hover 
 		background-color: #20f9f2
 .initials_signature
-	width: 600px
+	max-width: 600px
 	margin: 0 auto
 .skills 
 	background: linear-gradient(to right, rgba(252,252,252,1) 0%, rgba(252,252,252,1) 51%, rgba(233,233,233,1) 51%)
-	padding: 100px 100px
+	padding: 100px 0
+	@media (max-width: 768.98px)
+		background: rgba(252,252,252,1)
+		.text-capitalize
+			text-align: center
+		.professional_skills
+			max-width: inherit
 .progress 
 	height: 0.3rem
 	.progress-bar 
 		background-color: $color-turquoise
 .professional_skills 
-	width: 463px
+	max-width: 463px
+	@media  (max-width: 992.98px)
+		max-width: 300px
 .work_statistics 
 	background-color: $color-turquoise
-.hover_block:hover
-	background-color: #252525
-	background-image: url(../img/look_hover.png)
-	background-repeat: no-repeat
-	background-position: center 50%
-	img 
-		opacity: 0
+	@media (max-width: 768.98px)
+		height: 300px
+		.container 
+			display: flex
+			height: 100%
+	@media (max-width: 578.98px)
+		height: 500px
+		>.col-sm-6 > div
+			width: 50%
+			margin: 0 auto
+.hover_block
+	&.active,&:hover
+		background-color: #252525
+		background-image: url(../img/look_hover.png)
+		background-repeat: no-repeat
+		background-position: center 50%
+		img 
+			opacity: 0
 .block_button 
 	background-color: #f5f5f5
 	.load_work
 		margin: 0 auto
 		display: block
 		color: #b0b0b0
+.subtitle_work
+	max-width: 500px
+	margin: 0 auto
+.services 
+	background-color: #f5f5f5
+	.img_services
+		height: 70px
 
 
 
